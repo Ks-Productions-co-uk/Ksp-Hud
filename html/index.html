@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QBCore HUD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="hud" class="hud-container" style="display: none;">
+        <h2 class="hud-title">Player Info</h2>
+        <div class="hud-item">
+            <i class="fas fa-user"></i>
+            <span class="hud-label">ID:</span>
+            <span id="playerId" class="hud-value"></span>
+        </div>
+        <div class="hud-item">
+            <i class="fas fa-wallet"></i>
+            <span class="hud-label">Cash:</span>
+            <span id="cash" class="hud-value"></span>
+        </div>
+        <div class="hud-item">
+            <i class="fas fa-piggy-bank"></i>
+            <span class="hud-label">Bank:</span>
+            <span id="bank" class="hud-value"></span>
+        </div>
+        <div class="hud-item">
+            <i class="fas fa-briefcase"></i>
+            <span class="hud-label">Job:</span>
+            <span id="job" class="hud-value"></span>
+        </div>
+        <div class="hud-item">
+            <i class="fas fa-star"></i>
+            <span class="hud-label">Grade:</span>
+            <span id="grade" class="hud-value"></span>
+        </div>
+        <div class="hud-item">
+            <i class="fas fa-users"></i>
+            <span class="hud-label">Gang:</span>
+            <span id="gang" class="hud-value"></span>
+        </div>
+        <div class="hud-item">
+            <i class="fas fa-star"></i>
+            <span class="hud-label">Gang Grade:</span>
+            <span id="ganggrade" class="hud-value"></span>
+        </div>                       
+    </div>
+    <div id="settings-panel" style="display: none;">
+        <div class="settings-header">
+            <span>HUD Colors</span>
+            <i class="fas fa-times close-settings"></i>
+        </div>
+        <div class="color-options"></div>
+    </div>
+    <div id="extraHud" style="display: none;">
+        <div id="singleLineText"></div>
+    </div>
+    <div class="infobar-container" style="display: none;">
+        <div class="infobar-item">
+            <i class="fas fa-tachometer-alt infobar-icon"></i>
+            <span id="fps-value" class="infobar-value">60</span>
+        </div>
+        <div class="infobar-item">
+            <i class="fas fa-clock infobar-icon"></i>
+            <span id="time-value" class="infobar-value">12:00</span>
+        </div>
+        <div class="infobar-item">
+            <i class="fas fa-users infobar-icon"></i>
+            <span id="players-value" class="infobar-value">1/32</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 Awesome Hud For FiveM - qb-core 
-Author - The-Last-Knight @ ks productions. Discord: https://discord.gg/7M7tZcKCrM
+Author - The-Last-Knight @ ks productions.
 
 
 Shows player ID
